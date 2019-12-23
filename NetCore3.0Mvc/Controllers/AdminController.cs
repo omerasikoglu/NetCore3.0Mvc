@@ -10,6 +10,7 @@ namespace NetCore3._0Mvc.Controllers
 {
     public class AdminController : Controller
     {
+        // push github deneme
         public IActionResult Index()
         {
             string userName = HttpContext.Session.GetString(MySessionHelper.SESSION_USER_NAME);
