@@ -1,0 +1,47 @@
+﻿@model IEnumerable<NetCore3._0Mvc.Models.Games>
+@{
+    Layout = "~/Views/Shared/_ThemeLayout.cshtml";
+}
+
+
+<div class="slider movie-items" >
+    <div class="container">
+        <div class="row">
+            <div class="social-link">
+                <p>Follow us: </p>
+                <a href="#"><i class="ion-social-facebook"></i></a>
+                <a href="#"><i class="ion-social-twitter"></i></a>
+                <a href="#"><i class="ion-social-googleplus"></i></a>
+                <a href="#"><i class="ion-social-youtube"></i></a>
+            </div>
+            <div class="container" style="height:50%;width:50%;">
+
+                @{
+                    foreach (var game in Model)
+                    {
+                        <div class="movie-item">
+                            <div class="mv-img">
+                                <a href="#"><img src="@Url.Content("~/uploads/" + game.ImagePath)" alt="" width="285" height="437"></a>
+                            </div>
+                            <div class="title-in">
+                                <div class="cate">
+                                    <span class="blue"><a href="#">@game.Category</a></span>
+                                </div>
+                                <h6><a href="#">@game.GameName</a></h6>
+                                <p><i class="ion-android-star"></i><span>@game.Rate</span> /10</p>
+                            </div>
+                            <hr style="background:#ffffff"/>
+                        </div>
+                    }
+                }
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
