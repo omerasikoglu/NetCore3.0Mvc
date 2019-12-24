@@ -1,4 +1,4 @@
 # NetCore3.0Mvc
 
-Azure Link Adresimiz:
+Azure Adresimiz:
 https://netcore30mvc.azurewebsites.net/
